@@ -1,0 +1,14 @@
+from typing import List
+ class solution:
+     def twosum(self,nums:List[int],target :int)->:
+         num_dict={}
+         for i,num in enumerate(nums):
+             if target - num in num_dict:
+                 return[num_dict[target-num],i]
+             num_dict[num]=i
+sol=solution()
+nums=[5,6,7,8]
+target = 13
+result=sol.twosum(nums,target)
+print(result)
+         
